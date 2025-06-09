@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".walkthroughscreen.WalkThroughScreen">
+
+    <ImageView
+        android:layout_width="550dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/walkbunimg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="320dp"
+            android:layout_height="490dp"
+            android:backgroundTint="#7EFFFFFF"
+            app:cardElevation="11dp"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="We serve incomparable delicacies"
+                android:layout_gravity="top"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="74dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="220dp"
+                android:text="All the best restaurants with their top menu waiting for you, they cant’t wait for your order!!"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/skipbtn"
+                android:text="Skip ->"
+                android:background="@drawable/btn"
+                android:layout_gravity="bottom"
+                android:backgroundTint="#00FFFFFF"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="220dp"
+                android:background="@drawable/btn"
+                android:id="@+id/nextbtn"
+                android:text="Next ->"
+                android:backgroundTint="#00FFFFFF"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
